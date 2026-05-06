@@ -9,7 +9,7 @@
 ## 🟢 PROYECTO ACTIVO: IronPulse (smartwatches)
 
 ### Estado general
-- **Fase:** preparación de fichas de producto en Shopify (imágenes + copy + variantes). Configuración técnica pendiente.
+- **Fase:** catálogo importado en AutoDS (5/5 SKUs como borrador). Pendiente renombrar, copy honesto, imágenes Photoroom y publicar en Shopify.
 - **Deadline de lanzamiento:** semana del 4-10 de mayo de 2026.
 - **Mercados:** EEUU + Europa, ambos abiertos.
 - **Modelo de negocio:** tienda multimarca con curación (retailer) bajo nombres comerciales propios IronPulse.
@@ -30,10 +30,10 @@
 | Idioma | Inglés |
 | Logo | Montaña + rosa de los vientos (elegido, pendiente preparar versiones) |
 
-### Estado de plataformas verificado (29/04/2026)
+### Estado de plataformas verificado (06/05/2026)
 - **Shopify:** logueado, dominio configurado, 0 productos cargados, 0 de 7 tareas de configuración inicial completadas.
 - **DSers-AliExpress:** instalada.
-- **AutoDS:** instalada.
+- **AutoDS:** Plan Básico 500 ($39,90/mes) — **5/5 SKUs importados como borrador, 0 publicados en Shopify**. Uso: 5/500 variaciones, 1/1 tienda.
 - **Google Drive:** Documento Maestro y "IronPulse — Catálogo SKUs v1" accesibles.
 - **Limitación conocida:** la skill de Shopify NO permite subir imágenes de producto con fiabilidad — esa tarea la ejecuta siempre Antonio a mano.
 
@@ -55,6 +55,24 @@ Salto de precio diseñado para que cada gama tenga hueco emocional y funcional p
 - Trail: 1005005495407391 (es.aliexpress.com)
 - Edge: 1005006786664858 (es) / 3256806600350106 (us)
 - Ultra: 1005008454557604 (es) / 3256808268242852 (us)
+
+### Estado real en AutoDS tras importación (06/05/2026)
+
+Los 5 SKUs están como borrador en AutoDS con título genérico de AliExpress (renombrar pendiente). PVP cargado correctamente según catálogo:
+
+| Cat. | Título actual en AutoDS | PVP | Ganancia | Almacén usado | Notas |
+|---|---|---|---|---|---|
+| Recon | "Nuevo reloj inteligente GPS militar… 600 mAh" | 23,85 - 59,99 € | 4,11 - 39,24 € | (revisar) | 6 variantes EN STOCK. Margen mínimo 4,11 € peligroso — auditar variantes. |
+| Field | "Reloj inteligente IRON NEO 1,95'' 3 ATM" | 79,99 € | 61,90 € | Porcelana (CN) | Importado con almacén CN; cambiar a Alemania según catálogo. Margen 77%. |
+| Trail | "Nuevo reloj GPS… AMOLED 50m ATM, altímetro/barómetro" | 119,99 € | 77,76 € | (revisar) | Margen 65%. |
+| Edge | "[Estreno mundial 2024] Stratos 3 Pro AMOLED 1,43''" | 149,99 € | 104,66 € | (revisar) | Margen 70%. |
+| Ultra | "TANK T3 Ultra 2 GPS IP69K AMOLED" | 249,99 € | 131,59 € | EEUU | Margen 53%. Antonio cambió almacén a EEUU para sortear bloqueo "ALL". |
+
+### Hallazgos técnicos de AutoDS (06/05/2026)
+- **Bloqueo "Envío a ALL"**: AutoDS valida que el listing sea capaz de enviar a "ALL" países. Si la variante por defecto del producto en AliExpress no envía a algún destino global, el botón "Publicar en la tienda" y "Agregar como borrador (página simple)" disparan error toast: *"Envío no disponible para la región seleccionada. No pudimos importar este producto porque actualmente no está disponible para envío desde el almacén en [CN/DE/EE.UU.] a ALL"*.
+- **Bypass conocido**: el botón naranja **"Edita la página del producto con IA"** crea un pre-borrador sin validar destino "ALL" y sin gastar créditos (cancelar el modal de upsell de IA mantiene el borrador creado).
+- **Solución alternativa (la que usó Antonio para el Ultra)**: cambiar el desplegable "Envío desde almacén" antes de pulsar el botón de import, eligiendo un almacén que sí envíe a "ALL" (en el caso del Ultra, Estados Unidos).
+- **Configuración global de destinos**: la URL `/auto-ordering-settings` y `/settings/shipping` redirigen a `plansAddons` en el plan Básico 500. Solo se accede desde el toast de error cuando aparece la frase "consulta tu configuración de envío" — botón que se cierra muy rápido.
 
 ### Notas de verificación de listings (30/04/2026)
 - **Field (HAYLOU Iron Neo):** coste 27,39 EUR, próximo precio anunciado 20,99 EUR. Subida desde 20,79 EUR (28/04). Recalcular margen al PVP 79,99 EUR antes de carga definitiva.
@@ -118,15 +136,18 @@ Mientras no llegue ningún indicio real, se vende con normalidad y se prioriza f
 ### Copy honesto definitivo (redactado 30/04/2026)
 Borrador completo de las 5 fichas Shopify ya redactado y disponible en el documento operativo "IronPulse — Catálogo SKUs v1" (Google Drive). Pendiente de revisión final de Antonio antes de cargar.
 
-### Trabajo pendiente
-1. **Recalcular márgenes** con costes post-promo Día de la Madre antes de carga definitiva.
-2. **Verificar stock Ultra US (Local+)** desde sesión .com con dirección de EE.UU.
-3. **Trabajar imágenes en Photoroom** para los 5 SKUs (fondo limpio, vista principal + lateral).
-4. **Revisar copy honesto** de las 5 fichas (ya redactadas en el doc operativo).
-5. **Cargar productos** en Shopify (5 SKUs) con imágenes y copy.
-6. **Configurar variantes invisibles** del Ultra: Alemania para Europa, Estados Unidos para América.
-7. **Configuración Shopify (sesión siguiente):** pasarelas de pago (Shopify Payments + PayPal); páginas legales (aviso legal, política de privacidad, términos, envíos, devoluciones); zonas de envío EU + US y reglas de geo-routing por SKU; impuestos (IVA EU + sales tax US según estado).
-8. **Preparar versiones del logo** (fondo transparente, blanco, solo ícono, favicon).
+### Trabajo pendiente (orden propuesto tras sesión 06/05/2026)
+1. **Auditar variantes y márgenes del Recon** — el rango 4,11 € - 39,24 € indica que alguna variante (probablemente "malla negro" o "acero negro") tiene coste muy alto. Decidir variantes vivas o subir PVP de las caras.
+2. **Ajustar almacén del Field a Alemania** en AutoDS (ahora está en Porcelana/CN; el catálogo manda Germany para envíos rápidos a EU).
+3. **Verificar stock Ultra US (Local+)** desde sesión .com con dirección de EE.UU. (tarea de Antonio).
+4. **Renombrar títulos** de los 5 productos a la convención IronPulse (Recon, Field, Trail, Edge, Ultra).
+5. **Recalcular márgenes** con costes post-promo Día de la Madre antes de publicar.
+6. **Revisar copy honesto** de las 5 fichas (ya redactadas en el doc operativo).
+7. **Trabajar imágenes en Photoroom** para los 5 SKUs (subida manual la hace Antonio).
+8. **Configurar variantes invisibles** del Ultra: Alemania para Europa, Estados Unidos para América.
+9. **Publicar productos** en Shopify (5 SKUs) desde AutoDS.
+10. **Configuración Shopify (sesión siguiente):** pasarelas de pago (Shopify Payments + PayPal); páginas legales (aviso legal, política de privacidad, términos, envíos, devoluciones); zonas de envío EU + US y reglas de geo-routing por SKU; impuestos (IVA EU + sales tax US según estado).
+11. **Preparar versiones del logo** (fondo transparente, blanco, solo ícono, favicon).
 
 ---
 
@@ -208,22 +229,25 @@ Borrador completo de las 5 fichas Shopify ya redactado y disponible en el docume
 
 ## 📋 PRÓXIMA SESIÓN — AGENDA
 
-**Fecha objetivo:** 30/04/2026 y siguientes.
+**Fecha objetivo:** 07/05/2026 y siguientes.
 
-**Objetivo único de la sesión:** dejar las fichas de producto IronPulse listas en Shopify, con imágenes limpias y copy honesto, para poder pasar a configurar legales y pasarelas en la sesión siguiente.
+**Objetivo único de la sesión:** dejar las fichas IronPulse listas en AutoDS (variantes, almacén correcto, títulos IronPulse, copy honesto e imágenes Photoroom) y publicar los 5 SKUs en Shopify.
 
 **Antonio llega con:**
 - Imágenes base de los 5 SKUs ya editadas en Photoroom (fondo limpio, vista principal mínimo + lateral si es posible).
-- Cuenta Shopify accesible y con sesión iniciada.
+- Cuenta Shopify y AutoDS accesibles y con sesión iniciada.
 - Doc "IronPulse — Catálogo SKUs v1" abierto.
+- Verificación de stock Ultra US (Local+) desde sesión .com con dirección US (si la tiene hecha).
 - Al menos 3 horas reservadas para trabajar continuado.
 
 **Plan de trabajo en sesión:**
-1. Recalcular márgenes con costes post-promo actualizados.
-2. Cambiar el tema (si procede) y aplicar identidad visual base.
-3. Cargar los 5 SKUs en Shopify con imágenes Photoroom y copy honesto.
-4. Configurar precio (EUR para EU, USD para US donde aplique geo-routing).
-5. Configurar variantes de almacén donde corresponda (Ultra: dos variantes invisibles para el cliente — Alemania para Europa, EEUU para América).
-6. Dejar la lista de tareas pendientes para la sesión siguiente (configuración Shopify: pasarelas, legales, envíos, impuestos).
+1. Auditar variantes Recon y decidir cuáles dejar vivas / ajustar PVP.
+2. Cambiar almacén del Field a Alemania en AutoDS.
+3. Renombrar los 5 SKUs a "IronPulse Recon / Field / Trail / Edge / Ultra".
+4. Recalcular márgenes finales con costes actualizados.
+5. Aplicar copy honesto desde el doc operativo (descripciones, viñetas, sección "Lo que NO tiene" en Recon).
+6. Configurar variantes invisibles del Ultra (Alemania=EU, EEUU=US).
+7. Publicar los 5 SKUs en Shopify desde AutoDS.
+8. Dejar la lista de tareas pendientes para la sesión siguiente (configuración Shopify: pasarelas, legales, envíos, impuestos).
 
 **Tareas que NO entran en esta sesión** (van a la siguiente): pasarelas de pago, páginas legales, configuración fiscal, geo-routing avanzado, lanzamiento.
