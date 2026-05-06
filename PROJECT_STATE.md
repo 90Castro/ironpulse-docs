@@ -1,7 +1,7 @@
 # PROJECT STATE — Estado actual de los proyectos
 
-> **Propósito:** foto actual del estado de cada proyecto.  
-> **Se actualiza tras cada sesión** sustituyendo la información obsoleta.  
+> **Propósito:** foto actual del estado de cada proyecto.
+> **Se actualiza tras cada sesión** sustituyendo la información obsoleta.
 > Histórico completo en `PROJECT_LOG.md`.
 
 ---
@@ -9,49 +9,80 @@
 ## 🟢 PROYECTO ACTIVO: IronPulse (smartwatches)
 
 ### Estado general
-- **Fase:** carga de productos en Shopify y configuración técnica.
+- **Fase:** preparación de fichas de producto en Shopify (imágenes + copy + variantes). Configuración técnica pendiente.
 - **Deadline de lanzamiento:** semana del 4-10 de mayo de 2026.
 - **Mercados:** EEUU + Europa, ambos abiertos.
 - **Modelo de negocio:** tienda multimarca con curación (retailer) bajo nombres comerciales propios IronPulse.
+- **Principio rector:** honestidad por encima de marketing inflado. Las fichas en tienda reescriben las specs reales y añaden sección "Lo que NO tiene" cuando el listing del proveedor infla las características.
 
 ### Decisiones cerradas
 
 | Tema | Decisión |
 |---|---|
 | Marca | IronPulse |
-| Dominio | ironpulsewatch.com (registrado, expira 20/04/2027) |
-| Plataforma | Shopify (cuenta creada con datos fiscales de Antonio) |
+| Dominio | ironpulsewatch.com (registrado, expira 20/04/2027, configurado en Shopify) |
+| Plataforma | Shopify "Pulso de Hierro" (admin.shopify.com/store/na111s-jh) |
 | Tema | Dawn (gratuito) |
-| Proveedor | AliExpress Official Stores |
+| Proveedor | AliExpress Official Stores / Marcas+ |
+| Apps de dropshipping | DSers-AliExpress + AutoDS instaladas |
 | Herramienta de imagen | Photoroom (IA, conectada a Shopify) |
 | Mercado | EEUU + Europa |
 | Idioma | Inglés |
 | Logo | Montaña + rosa de los vientos (elegido, pendiente preparar versiones) |
 
-### Catálogo definitivo (3 SKUs)
+### Estado de plataformas verificado (29/04/2026)
+- **Shopify:** logueado, dominio configurado, 0 productos cargados, 0 de 7 tareas de configuración inicial completadas.
+- **DSers-AliExpress:** instalada.
+- **AutoDS:** instalada.
+- **Google Drive:** Documento Maestro y "IronPulse — Catálogo SKUs v1" accesibles.
+- **Limitación conocida:** la skill de Shopify NO permite subir imágenes de producto con fiabilidad — esa tarea la ejecuta siempre Antonio a mano.
 
-| Nombre comercial | Modelo proveedor | Vendedor | Coste | PVP | Posicionamiento |
+### Catálogo definitivo (5 SKUs)
+
+Salto de precio diseñado para que cada gama tenga hueco emocional y funcional propio: **60 → 80 → 120 → 150 → 250 EUR**.
+
+| Nombre comercial | Modelo proveedor | Vendedor AliExpress | Almacén | PVP | Posicionamiento |
 |---|---|---|---|---|---|
-| **IronPulse Recon** | (pendiente decisión final) | Pendiente | Pendiente | 79,99 USD/EUR | Entrada (el explorador) |
-| **IronPulse Trail** | Zeblaze Stratos 3 Pro | Zeblaze Official Store | 53,09 USD | 119,99 USD/EUR | Medio (deportivo outdoor) |
-| **IronPulse Apex** | Kospet Tank T3 Ultra 2 | Kospet Official Store | 142,32 USD (EU) / 129,99 USD (US) | 249,99 EUR / 229,99 USD | Premium (la cima) |
+| **IronPulse Recon** | ChiBear H16 | ChiBear Watch Store (Marcas+, NO Brand Verified) | Choice ES | 59,99 EUR | Entrada táctica |
+| **IronPulse Field** | HAYLOU Iron Neo (2025) | Haylou Europe Store (Official, Marcas+) | Germany | 79,99 EUR | Básico fiable |
+| **IronPulse Trail** | NORTH EDGE Cross Fit 3 | NORTH EDGE Smartwatch Store (Official) | Choice ES | 119,99 EUR | Outdoor con GPS real |
+| **IronPulse Edge** | Zeblaze Stratos 3 Pro | Zeblaze Official Store | EU + US (variantes) | 149,99 EUR | Premium GPS+AMOLED validado |
+| **IronPulse Ultra** | Kospet Tank T3 Ultra 2 | kospet Official Store (Marcas+ Verificado) | Local+ US + Brand+ EU | 249,99 EUR / 229,99 USD | Tope rugged 5ATM IP69K |
 
-**Nota sobre IronPulse Recon:** el rastreo identificó ChiBear H16 como candidato, pero presenta banderas rojas serias (especificaciones reales muy distintas de las anunciadas: IPS LCD vs AMOLED, IP67 vs IP68, batería real 200-300 mAh vs 600 mAh anunciados, GPS dependiente del móvil, vendedor NO Brand Verified). Antonio ha confirmado que se trazará una hoja de ruta de productos con clasificación honesta del catálogo, donde cada ficha refleja las especificaciones reales. Decisión final de SKU 01 pendiente.
+### URLs de proveedor (ID AliExpress)
+- Recon: 1005007224058908 (es.aliexpress.com)
+- Field: 1005009552458449 (es.aliexpress.com)
+- Trail: 1005005495407391 (es.aliexpress.com)
+- Edge: 1005006786664858 (es) / 3256806600350106 (us)
+- Ultra: 1005008454557604 (es) / 3256808268242852 (us)
+
+### Notas de verificación de listings (30/04/2026)
+- **Field (HAYLOU Iron Neo):** coste 27,39 EUR, próximo precio anunciado 20,99 EUR. Subida desde 20,79 EUR (28/04). Recalcular margen al PVP 79,99 EUR antes de carga definitiva.
+- **Edge (Zeblaze Stratos 3 Pro):** coste 46,19 EUR, próximo precio 42,14 EUR. Modelo más validado del catálogo: 565 valoraciones, 2.000+ vendidos.
+- **Ultra (Kospet Tank T3 Ultra 2):** coste 140,69 EUR (-50% dto. de 281,38 EUR). Subida fuerte respecto al 28/04 (era 119,99 USD ≈ 110 EUR). Final de promo Día de la Madre afecta al margen — prioridad recalcular antes de lanzar.
+- **Trail (NORTH EDGE Cross Fit 3):** coste 55,99 EUR (próximo 52,39 EUR). 75 vendidos, 4★. AMOLED + GPS confirmados.
+- **Recon (ChiBear H16):** no se pudo reverificar listing concreto desde búsqueda genérica. Notas operativas siguen siendo las del Catálogo SKUs v1.
+- **Stock Ultra US (Local+):** no verificable desde sesión geo-fijada a España. PENDIENTE para Antonio en sesión .com con dirección US.
+- **Implicación general:** las ofertas Día de la Madre están cayendo. Costes reales post-promo subirán los márgenes calculados el 28/04 en 5-15 EUR por unidad. Antes de carga definitiva, recalcular margen con coste actual o esperar a estabilización.
+
+### SKU descartado: M99 SIM 4G (29/04/2026)
+- Producto OEM genérico chino rebadgeado (GOLDENSPIKE, XINDADA, iMosi, EDMUND).
+- Mentiras del listing: "5G" (es 4G Cat-4), RAM 32GB y ROM 512GB (imposibles), batería 2100 mAh (real ~700-900 mAh, autonomía 24-36h confirmada por review independiente).
+- Vendedor no oficial, garantía cumple solo 43% según valoraciones.
+- **Decisión:** descartado. No cumple el principio de honestidad y rompería el ADN deportivo/rugged del catálogo.
+- **Búsqueda SIM 4G aplazada a v2 del catálogo.** Candidato a reevaluar: Kospet iHeal 5 / Optimus 3 (misma familia que Ultra → comparten marca y soporte postventa).
 
 ### Política de transparencia de marca
-
 **Decisión:** Opción B con mitigaciones — la marca del fabricante aparece únicamente en el desplegable "Technical Specifications".
 
 **Formato estándar de especificaciones técnicas (todos los SKUs):**
-
 ```
 ▼ TECHNICAL SPECIFICATIONS
-
-Manufacturer:        [Mevaden / Zeblaze / Kospet / etc.]
-Model:               [modelo real]
-Display:             [...]
-Water resistance:    [...]
-Battery:             [...]
+Manufacturer: [ChiBear / Haylou / North Edge / Zeblaze / Kospet]
+Model: [modelo real]
+Display: [...]
+Water resistance: [...]
+Battery: [...]
 [resto de specs reales del producto]
 
 Curated and serviced by IronPulse.
@@ -64,16 +95,19 @@ Curated and serviced by IronPulse.
 - Pasarelas: Shopify Payments + PayPal como respaldo.
 - KPIs de alarma: >2% chargebacks o reseñas negativas con mención de marca → activar plan B (cambio a Opción D, marca visible).
 
-### Riesgos legales asumidos por Antonio (decisión informada)
+### Reglas de presentación en tienda
+1. Copy honesto en TODOS los SKUs. Especialmente crítico en Recon: sección "Lo que NO tiene" obligatoria.
+2. Marca proveedor (ChiBear, Haylou, North Edge, Zeblaze, Kospet) NO se expone como rótulo principal. Solo el nombre comercial IronPulse.
+3. Argumento "envío rápido US" SOLO se promete en Edge y Ultra (almacén US confirmado). En Recon/Field/Trail se declara honestamente "Ships from EU — 5 to 13 business days" para clientes US.
+4. Geo-routing en Shopify: aplicar por SKU según disponibilidad geo verificada.
 
+### Riesgos legales asumidos por Antonio (decisión informada)
 - IRONPULSE registrada en Francia por CONCEPT LABEL SAS (clase de ropa/accesorios/deporte) y en uso comercial activo en Amazon ES/FR/BE/IT/MX para chalecos lastrados.
 - Existencia de Iron Pulse LLC en EEUU con solicitud pendiente en Clase 9 (24 dic 2025) que cubre smartwatches.
 - Riesgos de Opción B de transparencia (Directiva 2005/29/CE de prácticas comerciales desleales).
 
 ### Plan de contingencia C&D (acordado)
-
 Si llega cualquier indicio real de problema (carta C&D, queja formal, retirada por plataforma, denuncia, requerimiento legal):
-
 1. Se cierra inmediatamente la tienda afectada.
 2. Se conserva el inventario digital, fotos y aprendizajes operativos.
 3. Se relanza con marca y dominio nuevos (no relacionados) y, si procede, con productos diferentes.
@@ -81,19 +115,18 @@ Si llega cualquier indicio real de problema (carta C&D, queja formal, retirada p
 
 Mientras no llegue ningún indicio real, se vende con normalidad y se prioriza facturación.
 
-### Trabajo pendiente
+### Copy honesto definitivo (redactado 30/04/2026)
+Borrador completo de las 5 fichas Shopify ya redactado y disponible en el documento operativo "IronPulse — Catálogo SKUs v1" (Google Drive). Pendiente de revisión final de Antonio antes de cargar.
 
-1. **Cerrar SKU 01 definitivo** (alternativa al ChiBear H16 si su clasificación honesta no resulta viable).
-2. **Verificar precios actualizados** de los 3 SKUs (Mevaden post-oferta, Kospet post-promoción).
-3. **Adaptar identidad/tagline** al nuevo posicionamiento (deportivo + táctico, no solo militar).
-4. **Redactar copy** completo de los 3 productos con sus fichas honestas.
-5. **Preparar versiones del logo** (fondo transparente, blanco, solo ícono, favicon).
-6. **Configuración Shopify:**
-   - Pasarelas de pago (Shopify Payments + PayPal).
-   - Páginas legales: aviso legal, política de privacidad, términos, envíos, devoluciones.
-   - Zonas de envío EU + US y enrutamiento del SKU premium por almacén.
-   - Impuestos (IVA EU + sales tax US según estado).
-7. **Cargar productos** en Shopify con fotos limpias trabajadas en Photoroom.
+### Trabajo pendiente
+1. **Recalcular márgenes** con costes post-promo Día de la Madre antes de carga definitiva.
+2. **Verificar stock Ultra US (Local+)** desde sesión .com con dirección de EE.UU.
+3. **Trabajar imágenes en Photoroom** para los 5 SKUs (fondo limpio, vista principal + lateral).
+4. **Revisar copy honesto** de las 5 fichas (ya redactadas en el doc operativo).
+5. **Cargar productos** en Shopify (5 SKUs) con imágenes y copy.
+6. **Configurar variantes invisibles** del Ultra: Alemania para Europa, Estados Unidos para América.
+7. **Configuración Shopify (sesión siguiente):** pasarelas de pago (Shopify Payments + PayPal); páginas legales (aviso legal, política de privacidad, términos, envíos, devoluciones); zonas de envío EU + US y reglas de geo-routing por SKU; impuestos (IVA EU + sales tax US según estado).
+8. **Preparar versiones del logo** (fondo transparente, blanco, solo ícono, favicon).
 
 ---
 
@@ -101,8 +134,14 @@ Mientras no llegue ningún indicio real, se vende con normalidad y se prioriza f
 
 ### Estado general
 - **Fase:** investigación pausada hasta lanzar IronPulse.
-- **Concepto:** tienda online retro/nostalgia 80-90 con foco en música y gaming de la generación que hoy tiene 30-40 años.
+- **Concepto:** tienda online retro/nostalgia 80-90 con foco en música y gaming de la generación que hoy tiene 30-40 años. Identidad emocional fuerte, no commodity.
 - **Mercado inicial:** solo España.
+- **Cliente objetivo:** españoles de 28-45 años con poder adquisitivo medio que vivieron casete → CD → MP3 y Game Boy/PlayStation. "El cliente es Antonio hace 20 años."
+
+### Mercado validado
+- Ventas de casetes **+204,7% Q1 2025** en Europa (63.288 unidades).
+- 59% de la Gen Z escucha formatos físicos.
+- Marca francesa "We Are Rewind" vende reproductores de casete a 149€ → valida que hay demanda y precio alto dispuesto a pagarse.
 
 ### Decisiones cerradas
 
@@ -111,10 +150,12 @@ Mientras no llegue ningún indicio real, se vende con normalidad y se prioriza f
 | Modelo | Dropshipping puro, sin stock |
 | Marca | PLAYBACK Store |
 | Tagline candidato | "Dale al play a tus recuerdos" / "Algo con alma" |
-| Plataforma | Shopify (plan Basic) |
-| Proveedor principal | CJdropshipping (cuenta creada) |
-| Proveedor de calidad | Spocket (fase 2) |
-| Proveedor escalado | BigBuy (fase 3) |
+| Plataforma | Shopify (plan Basic mensual) |
+| Proveedor principal (fase 1) | CJdropshipping (cuenta creada) |
+| Proveedor de calidad (fase 2) | Spocket |
+| Proveedor escalado (fase 3) | BigBuy |
+| Apps Shopify | DSers/CJdropshipping (gratis), Vitals (~29€/mes), Translate & Adapt (gratis) |
+| Estrategia de pagos | Shopify Payments para evitar comisión adicional |
 | Dominio | playbackstore.es (comprado) |
 
 ### Identidad visual
@@ -134,29 +175,55 @@ Mientras no llegue ningún indicio real, se vende con normalidad y se prioriza f
 - **Logo:** "PLAYBACK ▸ STORE · EST. 2025" en marrón texto sobre fondos crema/arena/azul.
 - **Estética:** foto revelada en laboratorio del barrio. Tonos cálidos desteñidos.
 
+### Estrategia de contenido
+- **Plataformas:** TikTok + Instagram Reels + YouTube Shorts.
+- **Cuentas a reservar:** @playbackstore en las tres redes.
+- **Frecuencia:** 3 vídeos/semana.
+- **Producción:** todo con IA. Antonio escribe los guiones (con ayuda), las voces, subtítulos y vídeo se generan con IA. No quiere aparecer en cámara.
+- **Reciclaje:** un vídeo, tres redes (sin triplicar el trabajo).
+
+### Stack de IA para contenido (cerrado)
+
+| Función | Herramienta | Coste |
+|---|---|---|
+| Guiones | Claude | en uso |
+| Generación de vídeo (principal) | InVideo AI | ~20€/mes (Pro) |
+| Generación con avatar (fase 2) | HeyGen | ~29$/mes cuando aplique |
+| Edición y subtítulos | CapCut | Gratis |
+| Programación multi-red | Metricool | Gratis |
+
+**Coste mensual estimado del stack de contenido:** ~20€.
+
 ### Riesgos vivos
 - 14 registros activos en clases 9/35 con conflictos parciales (PLAYBACK SL Madrid en clase 35 limitada a moda; Playback Store Medellín Colombia con presencia en redes). Antonio asume el riesgo.
 
 ### Trabajo pendiente (cuando se reactive)
 1. Verificar marca PLAYBACK en OEPM/EUIPO/TMView clases 9 y 35.
 2. Reservar redes sociales aunque no se publique aún.
-3. Cerrar catálogo definitivo.
+3. Cerrar catálogo definitivo (búsqueda conjunta en CJ/Spocket/AliExpress ES).
 4. Crear cuenta Shopify y aplicar identidad visual.
+5. Escribir guión del primer vídeo TikTok.
 
 ---
 
 ## 📋 PRÓXIMA SESIÓN — AGENDA
 
-**Objetivo único:** dejar IronPulse en condiciones de aceptar pedidos.
+**Fecha objetivo:** 30/04/2026 y siguientes.
 
-**Orden de trabajo recomendado:**
-1. Cerrar SKU 01 definitivo (decidir si seguimos con ChiBear H16 con copy honesto, alternativa nueva, o lanzamos con 2 SKUs).
-2. Adaptar identidad/tagline al posicionamiento actual del catálogo.
-3. Redactar copy completo de los 3 productos.
-4. Configuración técnica Shopify (pagos, legales, envíos, impuestos).
-5. Cargar productos en Shopify con imágenes de Photoroom.
+**Objetivo único de la sesión:** dejar las fichas de producto IronPulse listas en Shopify, con imágenes limpias y copy honesto, para poder pasar a configurar legales y pasarelas en la sesión siguiente.
 
-**Antes de la próxima sesión, Antonio debe:**
-- Tener la cuenta Shopify accesible y con sesión iniciada.
-- Confirmar URLs definitivas de los 3 SKUs (verificar que siguen activas).
-- Reservar al menos 3 horas de trabajo continuado.
+**Antonio llega con:**
+- Imágenes base de los 5 SKUs ya editadas en Photoroom (fondo limpio, vista principal mínimo + lateral si es posible).
+- Cuenta Shopify accesible y con sesión iniciada.
+- Doc "IronPulse — Catálogo SKUs v1" abierto.
+- Al menos 3 horas reservadas para trabajar continuado.
+
+**Plan de trabajo en sesión:**
+1. Recalcular márgenes con costes post-promo actualizados.
+2. Cambiar el tema (si procede) y aplicar identidad visual base.
+3. Cargar los 5 SKUs en Shopify con imágenes Photoroom y copy honesto.
+4. Configurar precio (EUR para EU, USD para US donde aplique geo-routing).
+5. Configurar variantes de almacén donde corresponda (Ultra: dos variantes invisibles para el cliente — Alemania para Europa, EEUU para América).
+6. Dejar la lista de tareas pendientes para la sesión siguiente (configuración Shopify: pasarelas, legales, envíos, impuestos).
+
+**Tareas que NO entran en esta sesión** (van a la siguiente): pasarelas de pago, páginas legales, configuración fiscal, geo-routing avanzado, lanzamiento.
