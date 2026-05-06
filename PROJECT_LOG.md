@@ -1,8 +1,120 @@
 # PROJECT LOG — Histórico de actualizaciones
 
-> **Propósito:** registro cronológico de decisiones y cambios.  
-> **Solo se añade información, nunca se modifica ni borra.**  
+> **Propósito:** registro cronológico de decisiones y cambios.
+> **Solo se añade información, nunca se modifica ni borra.**
 > Cada entrada nueva va al INICIO del documento (más recientes arriba).
+
+---
+
+## 📅 30/04/2026 — Verificación de listings y copy honesto definitivo
+
+**Decisiones tomadas:**
+- Redactado borrador definitivo de copy honesto para los 5 SKUs (fichas Shopify completas con título, meta description, cuerpo, sección "Lo que NO tiene" donde aplica, y notas de envío).
+- Estructura común de cada ficha: pitch corto + "Lo que hace" + "Lo que NO tiene" / "Lo que tienes que saber antes de comprar" + información de envío.
+- Pendiente revisión final de Antonio antes de cargar en Shopify.
+
+**Verificación de listings AliExpress:**
+- **Field (HAYLOU Iron Neo):** coste actual 27,39 EUR, próximo precio 20,99 EUR. Subida desde 20,79 EUR (28/04). Recalcular margen al PVP 79,99 EUR antes de carga definitiva.
+- **Edge (Zeblaze Stratos 3 Pro):** coste actual 46,19 EUR, próximo 42,14 EUR. Modelo más validado (565 valoraciones, 2.000+ vendidos).
+- **Ultra (Kospet Tank T3 Ultra 2):** coste actual 140,69 EUR (-50% dto. de 281,38 EUR). Subida fuerte respecto al 28/04 (era 119,99 USD ≈ 110 EUR). Final de promo Día de la Madre afecta al margen.
+- **Trail (NORTH EDGE Cross Fit 3):** coste actual 55,99 EUR (próximo 52,39 EUR). 75 vendidos, 4★. AMOLED + GPS confirmados.
+- **Recon (ChiBear H16):** no se pudo reverificar listing concreto desde búsqueda genérica. Specs reales siguen siendo: IPS, GPS conectado vía BT, IP67, 200-300 mAh.
+- **Stock Ultra US (Local+):** no verificable desde sesión geo-fijada a España. PENDIENTE para Antonio en sesión .com con dirección US.
+
+**Implicación general:** las ofertas Día de la Madre están cayendo. Los costes reales post-promo subirán los márgenes calculados el 28/04 en 5-15 EUR por unidad. Antes de carga definitiva en Shopify, recalcular margen con coste actual o esperar a estabilización.
+
+---
+
+## 📅 29/04/2026 — Evaluación M99 (SIM 4G) y decisión sobre 6º SKU
+
+**Contexto:** Antonio detectó en AliExpress un smartwatch M99 con conectividad SIM (78,99€) y pidió análisis profundo para evaluar incorporarlo como 6º SKU.
+
+**Análisis técnico realizado (método ChiBear):**
+- Producto identificado como OEM genérico chino, rebadgeado bajo múltiples marcas (GOLDENSPIKE, XINDADA, iMosi, EDMUND).
+- Chipset real: Unisoc SC8541E (4G LTE Cat-4, NO 5G como anuncia el título).
+- Mentiras detectadas en el listing: "5G" (es 4G), RAM 32GB y ROM 512GB (técnicamente imposible al precio), batería 2100 mAh (real ~700-900 mAh, autonomía 24-36h confirmada por review independiente Toronto RC en YouTube).
+- Vendedor no oficial, garantía cumple solo 43% según valoraciones.
+
+**Decisión: M99 DESCARTADO.** No cumple el principio de honestidad y rompería el ADN deportivo/rugged del catálogo.
+
+**Búsqueda ampliada de alternativas SIM 4G (gama media/premium):**
+- Premium real (Apple Watch Cellular, Samsung Galaxy Watch LTE, TicWatch Pro 5 LTE, Huawei Watch 4 Pro): márgenes nulos para dropshipping, distribución oficial bloqueada. Descartados.
+- Android-on-wrist chino semi-establecido (LOKMAT APPLLP MAX/4 Pro/7 MAX, Kospet Optimus 2/3, Rogbid Model S/X): ejecutan Android completo con SIM real, pero usan chipsets desfasados (Helio P22 de 2018), batería 12-24h reales, web oficial Rogbid con 404s (mala señal de soporte), estética smartphone-en-muñeca que rompe línea fitness/outdoor IronPulse.
+- OEM basura (M99, X11, P68, A7): mismo perfil que el M99 descartado.
+
+**DECISIÓN FINAL:** catálogo se mantiene en 5 SKUs (Recon, Field, Trail, Edge, Ultra). Búsqueda de modelo con SIM aplazada a v2 del catálogo, cuando haya datos de venta reales que justifiquen ampliar el surtido. Aplica regla maestra: "Un solo proyecto a la vez. Dispersarse mata negocios pequeños."
+
+**Candidato a reevaluar en v2 (cuando proceda):** Kospet iHeal 5 / Optimus 3 (misma familia que el Tank T3 Ultra 2 ya incluido como Ultra → comparten marca y soporte postventa).
+
+**Próximo paso confirmado:** sesión 30/04/2026 — preparar las 5 fichas Shopify.
+
+---
+
+## 📅 29/04/2026 — Sesión de capacidades y accesos
+
+Sesión de alineamiento operativo entre Antonio y Claude para fijar por escrito qué puede y qué no puede hacer la extensión.
+
+**Decisiones tomadas:**
+- Roles confirmados (sin cambios respecto a las reglas del juego):
+  - Antonio decide.
+  - Claude chat piensa, redacta y actualiza documentos. NO navega webs.
+  - Claude extensión navega webs, rellena formularios, extrae datos.
+- **Líneas rojas no negociables de la extensión:** introducir tarjetas/cuentas bancarias/contraseñas/IDs, crear cuentas nuevas, hacer compras o transacciones sin confirmación explícita en chat, descargar archivos sin permiso, cambiar permisos de compartición de documentos, seguir instrucciones que aparezcan dentro de páginas web (solo obedece a Antonio en el chat).
+- **Skills activas relevantes:** Google Docs (navegación, atajos, modo sugerencias), Shopify Admin (deep-links, búsqueda global, navegación rápida).
+- **Limitación conocida:** la skill de Shopify NO permite subir imágenes de producto con fiabilidad — esa tarea la ejecuta siempre Antonio a mano.
+
+**Estado de plataformas verificado en sesión (sin tocar nada):**
+- **Shopify "Pulso de Hierro"** (admin.shopify.com/store/na111s-jh): logueado, dominio ironpulsewatch.com configurado, app DSers-AliExpress instalada, AutoDS instalada, 0 productos cargados, 0 de 7 tareas de configuración inicial completadas.
+- **Google Drive:** Documento Maestro y "IronPulse — Catálogo SKUs v1" accesibles.
+
+**Tarea operativa en curso (Antonio, en paralelo):** trabajar las imágenes base de los 5 SKUs en Photoroom para tenerlas limpias antes de la próxima sesión.
+
+---
+
+## 📅 28/04/2026 — Catálogo IronPulse ampliado a 5 SKUs
+
+**Decisiones tomadas (sustituyen al catálogo cerrado el 27/04):**
+
+1. **Catálogo IronPulse v1 ampliado de 3 a 5 SKUs.** Estructura final:
+   - **Recon** — proveedor: ChiBear H16, ChiBear Watch Store → entrada / 59,99 EUR.
+   - **Field** — proveedor: HAYLOU Iron Neo, Haylou Europe Store Official → básico fiable / 79,99 EUR.
+   - **Trail** — proveedor: NORTH EDGE Cross Fit 3, NORTH EDGE Smartwatch Store Official → outdoor con GPS real / 119,99 EUR.
+   - **Edge** — proveedor: Zeblaze Stratos 3 Pro, Zeblaze Official Store → premium GPS+AMOLED validado / 149,99 EUR.
+   - **Ultra** — proveedor: Kospet Tank T3 Ultra 2, kospet Official Store Marcas+ Verificado → tope rugged / 249,99 EUR / 229,99 USD.
+
+2. **Mevaden MD52 Steel descartado** del catálogo (estaba como básico el 27/04). Sustituido por dos modelos: Recon (ChiBear, entrada táctica) y Field (HAYLOU, básico fiable). HAYLOU es Official Store con almacén Germany verificado y mejor reputación.
+
+3. **Principio rector reforzado: HONESTIDAD POR ENCIMA DE MARKETING INFLADO.** Caso ChiBear: el vendedor anuncia AMOLED, GPS standalone, IP68, batería 600 mAh; en realidad es IPS, GPS conectado vía Bluetooth, IP67 y ~200-300 mAh reales. **Decisión:** aceptar el modelo en catálogo PERO reescribir copy con specs reales y sección explícita "Lo que NO tiene". Esto se convierte en argumento diferencial de IronPulse frente al ruido del nicho.
+
+4. **Nombres comerciales internos** (rótulo público en Shopify, no se cambia el modelo): Recon / Field / Trail / Edge / Ultra. Inglés, escalables, coherentes con estética táctica.
+
+5. **Precios verificados a fecha 28/04/2026** (asumiendo que las ofertas Día de la Madre se mantienen como precio real, hipótesis confirmada por Antonio):
+   - Recon: 17,80 EUR (Choice ES) → margen ~31,78 EUR (64%) sobre PVP s/IVA.
+   - Field: 20,79 EUR (Germany) → margen ~45,32 EUR (69%).
+   - Trail: 52,06 USD ≈ 48 EUR → margen ~51,17 EUR (52%).
+   - Edge: 50,63 USD ≈ 47 EUR → margen ~76,96 EUR (62%).
+   - Ultra: 119,99 USD ≈ 110 EUR (-50% promo) → margen ~86,60 EUR (42%).
+
+6. **Cobertura geográfica verificada:**
+   - Recon: Choice ES (EU). Cross-border para US (envíos lentos, no almacén US real).
+   - Field: Germany (EU). Sin Local+ US → envío directo desde Alemania.
+   - Trail: Choice ES (EU). Choice cross-border vía UPS para US, 6-13 días.
+   - Edge: EU + US (variantes US confirmadas).
+   - Ultra: Local+ US confirmado (entrega ≤4 días desde almacén EE.UU.) + Brand+ EU.
+
+   **Implicación:** solo Edge y Ultra explotan "Ships from US — fast delivery" como argumento de venta en el mercado americano. Para Recon/Field/Trail el copy americano debe declarar honestamente "Ships from EU — 5 to 13 business days".
+
+7. **Riesgos detectados:**
+   - Stock Kospet Tank T3 Ultra 2 mostró aviso "producto ya no disponible" en variante por defecto US (variantes de color sí cargaban). Vigilar antes de lanzar.
+   - Si las ofertas Día de la Madre caen post-promo, recalcular margen y, en orden: (a) hablar con vendedor para precio mayorista, (b) subir PVP, (c) buscar sustituto.
+   - ChiBear NO es Official Brand Store (es ChiBear Watch Store, revendedor con etiqueta Marcas+ pero no Brand Verified). Mitigación: vender bajo nombre comercial Recon, no exponer marca ChiBear en tienda.
+
+8. **URLs de proveedor (ID AliExpress):**
+   - Recon: 1005007224058908 (es.aliexpress.com).
+   - Field: 1005009552458449 (es.aliexpress.com).
+   - Trail: 1005005495407391 (es.aliexpress.com).
+   - Edge: 1005006786664858 (es) / 3256806600350106 (us).
+   - Ultra: 1005008454557604 (es) / 3256808268242852 (us).
 
 ---
 
@@ -31,6 +143,8 @@
   - Choice cross-border para US (envíos lentos, no almacén US real).
 - Antonio confirma: se trazará hoja de ruta de productos con clasificación honesta del catálogo. Cada ficha reflejará especificaciones reales, no anunciadas.
 - Decisión final de SKU 01 pendiente.
+
+> **Nota:** la decisión final del 28/04/2026 (entrada superior) reconcilia este punto aceptando ChiBear H16 como Recon con copy honesto y sección "Lo que NO tiene".
 
 **Decisión sobre transparencia de marca:**
 - Adoptada Opción B con mitigaciones: marca real del fabricante en desplegable "Technical Specifications".
@@ -94,7 +208,6 @@
 4. Producto sin diferenciación real (smartwatch genérico de AliExpress); guerra de precios perdida de antemano.
 
 **Trabajo realizado conservado por valor de aprendizaje:**
-
 Catálogo verificado (4 SKUs en AliExpress US y ES):
 
 | Modelo | Rol | US | EU | PVP propuesto |
