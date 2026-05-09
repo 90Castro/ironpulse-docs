@@ -8,9 +8,10 @@
 
 ## 🟢 PROYECTO ACTIVO: IronPulse (smartwatches)
 
-### Estado general (actualizado 08/05/2026)
+### Estado general (actualizado 09/05/2026)
 
-- **Fase:** **ONE-PRODUCT STORE en lanzamiento** — IronPulse Edge creado en Shopify como producto activo (pendiente solo subir imágenes Photoroom).
+- ⚠️ **Bloqueante crítico abierto:** el fabricante Zeblaze comunicó el 07/05/2026 que el Stratos 3 Pro se envía siempre desde China (no EU/US como decía el listing), solo queda variante de correa negra y está en final de vida (27 unidades en AliExpress, descatalogación inminente). Decisión final del SKU hero pendiente de respuesta del fabricante. Ver bloque "Bloqueante Zeblaze" más abajo.
+- **Fase:** **ONE-PRODUCT STORE en lanzamiento** — IronPulse Edge creado en Shopify como producto activo (pendiente solo subir imágenes Photoroom y resolver bloqueante Zeblaze).
 - **Estrategia:** lanzamiento como tienda mono-producto con el Edge (Zeblaze Stratos 3 Pro) como único SKU activo. Recon/Field/Trail/Ultra permanecen como borradores en AutoDS, en stand-by para Fase 2/3.
 - **Razón del pivote:** maximizar foco, simplicidad operativa y curva de aprendizaje en una primera tienda. Activar resto del catálogo solo cuando haya datos de validación del Edge.
 - **Mercados:** EU activo (Phase 1). US queda para Phase 1.5 cuando se confirme almacén US.
@@ -70,6 +71,23 @@ URL admin: `/store/na111s-jh/products/15494238896505`
 - Margen ~104€ por venta al PVP 149,99€
 - Sweet spot de precio (ni barato genérico, ni premium asustando)
 
+### ⚠️ Bloqueante Zeblaze (comunicado 07/05/2026)
+
+Comunicación recibida del fabricante el 07/05/2026 que invalida varios de los criterios por los que se eligió el Edge como SKU hero:
+
+- **Origen real del envío:** todas las unidades del Stratos 3 Pro salen de China. El listing de AliExpress que indicaba almacén EU/US no refleja la realidad logística del fabricante.
+- **Variantes disponibles:** solo queda la versión con correa negra. La variante "Ocean Blue" creada en Shopify NO está disponible en stock real.
+- **Final de vida:** 27 unidades restantes en AliExpress. Descatalogación inminente.
+
+**Acción tomada por Antonio:** contacto directo con Zeblaze preguntando por:
+1. Producto sustituto con características similares ya disponible.
+2. Roadmap de productos nuevos previstos.
+
+**Decisión pendiente:** confirmación del SKU hero definitivo de la one-product store cuando llegue respuesta del fabricante. Mientras tanto:
+- No subir imágenes Photoroom del Edge (riesgo de tirar el trabajo si cambia el SKU).
+- No lanzar campañas de marketing.
+- Ficha del Edge en Shopify queda como "Activa" provisionalmente; revisar tras respuesta.
+
 ### Catálogo en stand-by (Fase 2/3) — borradores intactos en AutoDS
 
 | Cat. | Modelo proveedor | Vendedor AliExpress | PVP previsto | Fase activación |
@@ -123,6 +141,22 @@ Curated and serviced by IronPulse.
 - En Phase 1: shipping declarado honestamente "Ships from EU — 5 to 12 business days". US se atiende como "Ships from EU — 8 to 15 business days" hasta activar almacén US.
 - Geo-routing en Shopify: por configurar cuando se active US (Phase 1.5).
 
+### Política operativa fiscal (decisión 07/05/2026)
+
+**Estado actual:** Antonio opera como **persona física**, no dado de alta como autónomo en RETA ni en censo de actividades económicas (modelos 036/037 de la AEAT).
+
+**Constancia escrita:**
+1. Antonio ha sido informado del riesgo de operar sin alta en autónomos en España (advertencia documentada en chat).
+2. Antonio decide proceder bajo su responsabilidad, regularizando cuando haya ventas regulares.
+3. Claude ha cumplido su deber de advertencia documentada.
+
+**Implicación operativa:**
+- **Aviso Legal en tienda:** versión de transición persona física, sin NIF visible. Pendiente sustituir por versión completa cuando Antonio se dé de alta.
+- **Información de contacto (página obligatoria UE):** misma versión transición, sin razón social fiscal.
+- **Pasarelas:** Shopify Payments y PayPal verifican identidad pero no cumplimiento fiscal local; la responsabilidad legal es siempre del operador.
+
+**Recomendación pendiente:** consulta puntual con gestor (60-100 €) antes de campañas de marketing escaladas.
+
 ### Riesgos legales asumidos por Antonio (decisión informada)
 
 - IRONPULSE registrada en Francia por CONCEPT LABEL SAS (clase ropa/accesorios/deporte) en uso en Amazon ES/FR/BE/IT/MX para chalecos lastrados.
@@ -151,7 +185,14 @@ Mientras no llegue ningún indicio real, se vende con normalidad y se prioriza f
 ### Trabajo pendiente sesión siguiente
 
 1. **Pasarelas de pago:** activar Shopify Payments + PayPal.
-2. **Páginas legales:** aviso legal, política de privacidad, términos, política de envíos, política de devoluciones (30 días).
+2. **Páginas legales (estado real al 09/05/2026):**
+   - ✅ Política de devoluciones (30 días, gastos pagados, alineada con decisión IronPulse) — publicada.
+   - ✅ Términos del Servicio (14 cláusulas, EU + ODR + garantía 2 años) — publicada.
+   - ✅ Política de envío (envío desde EU, plazos honestos UE/UK/CH/NO/US, aduanas declaradas con valor real) — publicada.
+   - ✅ Política de privacidad — automatizada por Shopify.
+   - ⏳ Información de contacto (obligatoria UE) — pendiente, bloqueada por decisión "persona física sin NIF" (versión transición).
+   - ⏳ Aviso legal — pendiente, misma razón.
+   - ⏳ Enlazar las 5 páginas en el footer cuando estén las 6 publicadas.
 3. **Zonas de envío EU:** configurar tarifas (gratis o coste fijo bajo) para todos los países EU activos.
 4. **Impuestos:** IVA EU según régimen del vendedor.
 5. **Email post-compra:** plantilla con mención al fabricante real (Zeblaze).
