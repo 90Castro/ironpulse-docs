@@ -1,4 +1,4 @@
-# IRONPULSE ULTRA — DRAFT (10/05/2026)
+# IRONPULSE ULTRA — BORRADOR (10/05/2026)
 
 > **Estado:** Borrador. NO publicar hasta cumplir las tres condiciones de activación recogidas en `PROJECT_STATE.md` → "Nota Ultra (10/05/2026)".
 > **SKU candidato:** KOSPET Tank T4.
