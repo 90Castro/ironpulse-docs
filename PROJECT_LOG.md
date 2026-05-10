@@ -6,6 +6,46 @@
 
 ---
 
+## 📅 10/05/2026 — Análisis Tank T4 + Tank T4 evaluado como sucesor del T3 Ultra 2
+
+**Contexto de la sesión:** Antonio pide análisis profundo del KOSPET Tank T4 (NUEVO LANZAMIENTO 2025, $268,24 / 271,99 €) abierto en AliExpress, con dos preguntas: qué características son reales y cuáles marketing, y precio de venta recomendado para dropshipping en EE.UU. La conversación deriva al encaje del T4 dentro del catálogo IronPulse.
+
+**Decisiones tomadas:**
+
+Tank T4 NO sustituye al Edge. Aunque el SKU hero está bloqueado por la situación Zeblaze, el T4 reproduce los dos peores defectos del bloqueante (envío desde China + producto no validado, 0 vendidos) y además sube el ticket fuera del sweet spot one-product (271,99 € vs 149,99 €). Si el bloqueante Zeblaze obliga a pivotar SKU hero, los candidatos preferidos son Field (HAYLOU Iron Neo) o Trail (NORTH EDGE Cross Fit 3), no el T4.
+
+Tank T4 evaluado como sucesor natural del T3 Ultra 2 en el slot Ultra de Fase 2. El T4 es la evolución directa: AMOLED 1000 nits, GPS doble banda L1+L5 (el T3 era monobanda), batería 500 mAh de cobalto puro, modos buceo nativos, mapas offline topográficos. NO se sustituye todavía: el documento maestro mantiene el T3 Ultra 2 como Ultra y registra el T4 como sucesor evaluado a reevaluar al iniciar Fase 2.
+
+Tres condiciones simultáneas para activar el T4 como Ultra: (a) almacén EU/US local confirmado por Kospet, (b) >100 ventas reales y >50 reseñas del T4 en AliExpress, (c) Edge ya validado en Fase 1. Si alguna falla, mantener T3 Ultra 2 como Ultra.
+
+Pricing recomendado T4 (cuando se active): 329,99 € EU / 339,99 USD US Phase 1.5. COGS landed estimado 190-210 €. Margen bruto 120-140 € por unidad. Founders price 2 semanas: 279,99 € / 289,99 USD. Posicionamiento por debajo de Garmin Instinct 2 ($349) y Amazfit T-Rex Ultra ($279) — "premium accesible".
+
+**Análisis técnico del Tank T4 — claims reales vs problemáticos:**
+
+Reales y verificables: AMOLED 1.43" 466×466 a 1000 nits, GPS doble banda L1+L5 con 6 sistemas satelitales, mapas offline topográficos y de curvas, acero inoxidable bisel/caja/tapa, Gorilla Glass 3, Bluetooth 5.3, 500 mAh / 14-15 días típica / 21-22 h GPS continuo, sensores VC9213-4PD + giroscopio 6 ejes + barómetro + brújula, certificaciones CE/FCC/RoHS/KC, app Apexmove (Android 7+/iOS 14+), 183 modos deportivos, modos buceo nativos.
+
+Problemáticos / marketing inflado: "Resistente al agua hasta 100 m / buceo libre 45 m" (real: 10 ATM + IP69K, sin certificación ISO 22810/EN 13319 para buceo; vender como reloj de buceo es claim FTC-arriesgado y choca con la Directiva 2005/29/CE). "Grado militar" sin MIL-STD-810H concreto. Contradicción Hardlex vs Gorilla Glass 3 dentro de la propia ficha. "Apoya Alexa: norte" (error de traducción de "No"). "Watch OS" induce a confusión con watchOS de Apple (real: RTOS propietario KOSPET). "Compatibilidad: Todos compatibles" es falso (real: Android 7+ / iOS 14+).
+
+**Trabajo ejecutado en la sesión (commits a main del repo `ironpulse-docs`):**
+
+Commit `docs(state): Tank T4 evaluado como sucesor del T3 Ultra 2 en slot Ultra Fase 2` modifica PROJECT_STATE.md: fila Ultra de "Catálogo en stand-by" ampliada a "Kospet Tank T3 Ultra 2 (sucesor evaluado: Tank T4)" con doble PVP, y se añade "Nota Ultra (10/05/2026)" con las tres condiciones. Commit `docs(ultra): añadir IRONPULSE_ULTRA_DRAFT.md (ficha Shopify completa Tank T4)` crea archivo nuevo con: Title, SKU tagline, Description honesto en inglés ~1.700 chars (con neutralización de claims problemáticos del listing original), Technical Specifications dropdown completo, Variants Obsidian/Glacier Steel, Pricing, mitigaciones obligatorias, lista de imágenes Photoroom, banner Fase 2 y checklist de pre-vuelo. Tras feedback de Antonio, el archivo se renombra a IRONPULSE_ULTRA_BORRADOR.md para alinearse con la convención del resto del repo (ESTADO_DEL_PROYECTO, REGISTRO_DEL_PROYECTO, INSTRUCCIONES_MAESTRAS, LÉAME).
+
+**Aprendizajes:**
+
+En la línea Tank de Kospet, los listings nuevos ("NUEVO LANZAMIENTO" 2025) repiten el patrón de claims acuáticos exagerados (100 m / 45 m de buceo). En IronPulse hay que neutralizar SIEMPRE estos claims en el copy de tienda — no solo por riesgo legal FTC/UE sino porque también protege la reserva económica de devoluciones.
+
+Edición de archivos .md en GitHub con CodeMirror 6: Ctrl+H NO abre el diálogo de buscar/reemplazar (la "h" se inserta como carácter). El que sí funciona es Ctrl+F, que abre el panel completo con campos "Encontrar" y "Reemplazar" más botones "Próximo", "Reemplazar" y "Reemplazar Todo". Este es el método fiable para ediciones quirúrgicas.
+
+La acción `type` del browser tool puede dar timeout con bloques de texto largos (~10k chars) pero el contenido sí se llega a escribir completo: hay que verificar el resultado antes de reintentar para no duplicar.
+
+También: cuando se pegan listas numeradas o sub-listas con guiones en el editor CodeMirror de GitHub, el editor renumera y reindenta automáticamente, rompiendo la estructura. Solución: redactar las entradas del log en párrafos en prosa, sin listas numéricas explícitas, igual que las entradas anteriores del PROJECT_LOG.
+
+Las traducciones del UI de GitHub al español traducen los nombres de archivo en el listado del repo (ej. "DRAFT" → "BORRADOR") aunque el archivo real conserva su nombre original. Para evitar confusión, conviene nombrar los archivos del repo en el mismo idioma que el resto (español) si se va a operar con la UI traducida.
+
+**Pendientes activos al cierre de la sesión:**
+
+Bloqueante Zeblaze sigue abierto (sin respuesta del fabricante en esta sesión). Trabajo pendiente del Edge intacto: imágenes Photoroom, home page, pasarelas Shopify Payments + PayPal, páginas legales de contacto y aviso legal, IVA UE, zonas de envío, email post-compra mencionando fabricante real, y Phase 1.5 (almacén US). Activación del Tank T4 como Ultra queda condicionada a las tres condiciones del documento maestro y se reevalúa al iniciar Fase 2.
+
 ## 📅 09/05/2026 — Edge en Shopify, 3 políticas legales publicadas, bloqueo por persona física
 
 **Contexto de la sesión:** trabajo sobre el "Bloque 2 — Páginas legales" en Shopify, en paralelo a la espera de respuesta del fabricante Zeblaze sobre el bloqueante del 07/05.
