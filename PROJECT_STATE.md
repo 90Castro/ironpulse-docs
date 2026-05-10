@@ -96,9 +96,11 @@ Comunicación recibida del fabricante el 07/05/2026 que invalida varios de los c
 | Field | HAYLOU Iron Neo (2025) | Tienda Haylou Europa (Oficial, Marcas+) | 79,99 € | Fase 3 |
 | Trail | NORTH EDGE Cross Fit 3 | NORTH EDGE Smartwatch Store (Official) | 119,99 € | Fase 3 |
 | Edge | Zeblaze Stratos 3 Pro | Zeblaze Official Store | **149,99 €** | **ACTIVO Fase 1** |
-| Ultra | Kospet Tank T3 Ultra 2 | Kospet Official Store (Marcas+ Verificado) | 249,99 € / 229,99 USD | Fase 2 |
+| Ultra | Kospet Tank T3 Ultra 2 (sucesor evaluado: Tank T4) | Kospet Official Store (Marcas+ Verificado) | 249,99 € (T3 U2) / 329,99 € (T4) | Fase 2 |
 
 **Regla operativa:** NO tocar Recon/Field/Trail/Ultra en AutoDS hasta validar el Edge. Permanecen como borradores con título genérico de AliExpress.
+
+**Nota Ultra (10/05/2026):** Tank T4 evaluado como sucesor del T3 Ultra 2. Ficha Shopify completa (Title + Tagline + Description + Technical Specifications + Variants + Pricing) redactada como borrador "IronPulse Ultra Draft" en sesión 10/05/2026. Activación condicionada a las tres condiciones simultáneas: (a) almacén EU/US local confirmado por Kospet para el T4, (b) >100 ventas reales y >50 reseñas del T4 en AliExpress, (c) Edge ya validado en Fase 1. Si alguna condición falla en el momento de iniciar Fase 2, mantener Tank T3 Ultra 2 como Ultra. PVP propuesto T4: 329,99 € (EU) / 339,99 USD (US Phase 1.5). COGS landed estimado 190-210 €.
 
 ### Estado de plataformas verificado (08/05/2026)
 
